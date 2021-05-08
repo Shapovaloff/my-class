@@ -89,21 +89,21 @@
       </nav>
       <section class="settings">
         <h2>Тема</h2>
-        <ul class="theme-list js-buttons-container">
+        <ul class="theme-list js-buttons-container" data-setting-target="html" data-setting-type="attribute">
           <li class="theme-item">
-            <button class="theme-button theme-button-light active" data-seting-name="" type="button">
+            <button class="theme-button active" data-setting-name="themeName" data-setting-value="light" type="button">
               <img src="img/theme-light-preview.png" width="67" height="43" alt="Белый и сиреневый цвета темы">
               <span>Светлая</span>
             </button>
           </li>
           <li class="theme-item">
-            <button class="theme-button theme-button-dark" type="button">
+            <button class="theme-button" data-setting-name="themeName" data-setting-value="dark" type="button">
               <img src="img/theme-dark-preview.png" width="67" height="43" alt="тёмный и сиреневый цвета темы">
               <span>Темная</span>
             </button>
           </li>
           <li class="theme-item">
-            <button class="theme-button theme-button-texture" type="button">
+            <button class="theme-button" data-setting-name="themeName" data-setting-value="texture" type="button">
               <img src="img/theme-texture-preview.png" width="67" height="43" alt="Серый камень">
               <span>Текстура</span>
             </button>
@@ -212,9 +212,9 @@
               <a href="#">цене</a>
             </li>
           </ul>
-          <ul class="card-view-buttons js-buttons-container">
+          <ul class="card-view-buttons js-buttons-container"  data-setting-target=".cards" data-setting-type="class">
             <li class="card-view-item">
-              <button class="card-view-button card-view-button-tile active" type="button">
+              <button class="card-view-button active" data-setting-name="viewCard" data-setting-value="tile" type="button">
                 <span class="visually-hidden">Плитка</span>
                 <svg width="21" height="13" viewBox="0 0 21 13" fill="none">
                   <rect x="16" y="8" width="5" height="5" rx="1"/>
@@ -227,7 +227,7 @@
               </button>
             </li>
             <li class="card-view-item">
-              <button class="card-view-button card-view-button-standard" type="button">
+              <button class="card-view-button" data-setting-name="viewCard" data-setting-value="standard" type="button">
                 <span class="visually-hidden">Список</span>
                 <svg width="30" height="13" viewBox="0 0 30 13" fill="none">
                   <rect x="8" y="8" width="22" height="5" rx="1"/>
@@ -238,7 +238,7 @@
               </button>
             </li>
             <li class="card-view-item">
-              <button class="card-view-button card-view-button-compact" type="button">
+              <button class="card-view-button" data-setting-name="viewCard" data-setting-value="compact" type="button">
                 <span class="visually-hidden">Компактный список</span>
                 <svg width="32" height="13" viewBox="0 0 32 13" fill="none">
                   <rect x="6" y="10" width="26" height="3" rx="1"/>
