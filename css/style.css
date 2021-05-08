@@ -198,6 +198,7 @@ body {
   color: inherit;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .theme-button:focus {
@@ -494,6 +495,7 @@ body {
 }
 
 .card-view-button {
+  cursor: pointer;
   display: flex;
   padding: 5px;
   background-color: var(--card-views-background-color);
